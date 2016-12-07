@@ -395,7 +395,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function addhost($parameters)
     {
-        $object = new Centreon_Object_Host();
+        $object = new \Centreon_Object_Host();
         $this->addGenericRelation($parameters, $object, 'downtime_host_relation', 'host_host_id');
     }
 
@@ -425,7 +425,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function delhost($parameters)
     {
-        $object = new Centreon_Object_Host();
+        $object = new \Centreon_Object_Host();
         $this->delGenericRelation($parameters, $object, 'downtime_host_relation', 'host_host_id');
     }
 
@@ -436,7 +436,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function addhostgroup($parameters)
     {
-        $object = new Centreon_Object_Host_Group();
+        $object = new \Centreon_Object_Host_Group();
         $this->addGenericRelation($parameters, $object, 'downtime_hostgroup_relation', 'hg_hg_id');
     }
 
@@ -466,7 +466,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function delhostgroup($parameters)
     {
-        $object = new Centreon_Object_Host_Group();
+        $object = new \Centreon_Object_Host_Group();
         $this->delGenericRelation($parameters, $object, 'downtime_hostgroup_relation', 'hg_hg_id');
     }
 
@@ -613,7 +613,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function addservicegroup($parameters)
     {
-        $object = new Centreon_Object_Service_Group();
+        $object = new \Centreon_Object_Service_Group();
         $this->addGenericRelation($parameters, $object, 'downtime_servicegroup_relation', 'sg_sg_id');
     }
 
@@ -643,7 +643,7 @@ class CentreonDowntime extends CentreonObject
      */
     public function delservicegroup($parameters)
     {
-        $object = new Centreon_Object_Service_Group();
+        $object = new \Centreon_Object_Service_Group();
         $this->delGenericRelation($parameters, $object, 'downtime_servicegroup_relation', 'sg_sg_id');
     }
 
